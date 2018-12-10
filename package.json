@@ -1,0 +1,46 @@
+{
+  "name": "mysql-flexi-promise",
+  "version": "1.0.0",
+  "description": "wrapper on nodejs mysql package which supports promises and singleton pool connection",
+  "main": "DatabaseConnection.js",
+  "scripts": {
+    "test": "jest --forceExit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surajJha/mysql-flexi-promise.git"
+  },
+  "keywords": [
+    "mysql",
+    "promises",
+    "async",
+    "await",
+    "singleton",
+    "es6",
+    "es7",
+    "nodejs"
+  ],
+  "author": "Suraj Kumar Jha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/surajJha/mysql-flexi-promise/issues"
+  },
+  "homepage": "https://github.com/surajJha/mysql-flexi-promise#readme",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "docdash": "^1.0.1",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.1.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-watch": "^3.1.2",
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0",
+    "jsdoc": "^3.5.5",
+    "nodemon": "^1.18.7"
+  }
+}
