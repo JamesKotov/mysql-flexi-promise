@@ -4,7 +4,7 @@
   "description": "wrapper on nodejs mysql package which supports promises and singleton pool connection",
   "main": "DatabaseConnection.js",
   "scripts": {
-    "test": "jest --forceExit"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
