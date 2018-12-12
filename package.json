@@ -1,10 +1,10 @@
 {
   "name": "mysql-flexi-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "wrapper on nodejs mysql package which supports promises and singleton pool connection",
   "main": "DatabaseConnection.js",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --forceExit"
   },
   "repository": {
     "type": "git",
