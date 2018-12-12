@@ -1,8 +1,17 @@
 const mysql = require('mysql');
-const _ = require('lodash');
 
 let instance;
+
+/**
+ * @class DatabaseConnection class exposes methods to work with mysql and returns query execution
+ * results as promise
+ */
 class DatabaseConnection {
+	/**
+	 * @methodOf DatabaseConnection.getInstance method creates a singleton object of this class
+     * @param config
+     * @returns {*}
+     */
 	static getInstance(config) {
 		if (instance) return instance;
 		instance = new DatabaseConnection();
@@ -50,7 +59,7 @@ class DatabaseConnection {
 
 	/**
      * @methodOf DatabaseConnection.closePool destroys the pool and all its connections
-     * @returns {boolean} result
+     * @returns {Promise<any>} result
      */
 	closePool() {
 		return new Promise((resolve, reject) => {
