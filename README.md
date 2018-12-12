@@ -10,6 +10,12 @@ npm i mysql-flexi-promise
 ### Requirements
 depends on mysql npm package. Supports mysql 5.x. doesn't support mysql 8.0
 
+## Description
+library exposes 3 functions ->
+getInstance() : takes mysql config as input and returns a singleton class
+executeQuery() : takes the SQL query and options as inputs and returns the result as a promise
+closePool() : ends the pool connection to the database.
+
 ### Code Example
 
 ```javascript
